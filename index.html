@@ -15,13 +15,19 @@
 	body {
 		background: white;
 		color:#444;
-		font-family: "Helvetica", "Tahoma", "Arial", sans-serif;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Tahoma", Arial, "Lucida Grande", sans-serif;
+		font-weight: 300;
 		text-align: center;
+		font-size: 14px;
+
+		width:709px;
+		text-align: left;
+		margin: 0 auto;
 	}
 	h1 {
 		margin: 20px 0;
-		font-weight: normal;
-		font-size: 1.3em;
+		font-weight: 400;
+		font-size: 1.4em;
 	}
 	img {
 		height: 467px;
@@ -46,62 +52,62 @@
 	a:focus {
 		outline-style: none;
 	}
-	ul {
-		list-style-position:outside;
-		line-height: 1.8em;
-		margin: 20px auto;
+	/* Evenly spaced inline items: http://jsfiddle.net/bXKFA/2/ */
+	.wrap{
+		margin-top: 22px;
+		height: auto;
+		text-align: justify;
+		-ms-text-justify: distribute-all-lines;
+		text-justify: distribute-all-lines;
 	}
-	li {
-		list-style: none;
-		display: inline;
-		margin: 0 9px;
-		font-size: 14px;
+	.gallery{
+		width: auto;
+		height: 40px;
+		vertical-align: top;
+		display: inline-block;
+		*display: inline;
+		zoom: 1;
 	}
-	.ny{
-		margin-left: 0;
+	.stretcher {
+		width: 100%;
+		display: inline-block;
+		font-size: 0;
+		line-height: 0;
 	}
-	.gallery {
+	.gallery-name {
 		font-weight: bold;
-	}
-	.wrap {
-		display: block;
-		width:709px;
-		text-align: left;
-		margin: 0 auto;
 	}
 	</style>
 </head>
 <body>
+	<h1>Mike Nelson</h1>
+	<img src="res/img/MN_A%20Psychic_Vacuum_4_NewYork_2007_72dpi.jpg" alt="Psychic Vacuum by Mike Nelson, 2007" />
 	<div class="wrap">
-		<h1>Mike Nelson</h1>
-		<img src="res/img/MN_A%20Psychic_Vacuum_4_NewYork_2007_72dpi.jpg" alt="Psychic Vacuum by Mike Nelson, 2007" />
-		<ul>
-			<li class="ny">
-				<a href="http://www.303gallery.com/artists/mike_nelson" title="303gallery.com">
-					<span class="gallery">303 Gallery</span> 
-					<span class="city">New York</span> 
-				</a>
-			</li>
-			<li class="tu">
-				<a href="http://www.franconoero.com/artisti/mike-nelson" title="franconoero.com">
-					<span class="gallery">Galleria Franco Noero</span>
-					<span class="city">Turin</span>
-				</a>
-			</li>		
-			<li class="ldn">
-				<a href="http://www.mattsgallery.org/artists/nelson/home.php" title="mattsgallery.org">
-					<span class="gallery">Matt's Gallery</span>
-					<span class="city">London</span>
-				</a>
-			</li>
-			<li class="ber">
-				<a href="http://www.neugerriemschneider.com/" title="neugerriemschneider.com/">
-					<span class="gallery">neugerriemschneider</span>
-					<span class="city">Berlin</span>
-				</a>
-			</li>
-			
-		</ul>	
+		<div class="gallery">
+			<a href="http://www.303gallery.com/artists/mike_nelson" title="303gallery.com">
+				<span class="gallery-name">303 Gallery</span> 
+				<span class="city">New York</span> 
+			</a>
+		</div>
+		<div class="gallery">
+			<a href="http://www.franconoero.com/artisti/mike-nelson" title="franconoero.com">
+				<span class="gallery-name">Galleria Franco Noero</span>
+				<span class="city">Turin</span>
+			</a>			
+		</div>
+		<div class="gallery">
+			<a href="http://www.mattsgallery.org/artists/nelson/home.php" title="mattsgallery.org">
+				<span class="gallery-name">Matt's Gallery</span>
+				<span class="city">London</span>
+			</a>
+		</div>
+		<div class="gallery">
+			<a href="http://www.neugerriemschneider.com/" title="neugerriemschneider.com/">
+				<span class="gallery-name">neugerriemschneider</span>
+				<span class="city">Berlin</span>
+			</a>				
+		</div>
+		<span class="stretcher"></span>
 	</div>
 </body>
 </html>
